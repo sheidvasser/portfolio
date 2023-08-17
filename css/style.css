@@ -67,7 +67,7 @@ button {
     align-items: center;
     padding: 30px 0;
 }
-.nav__list {
+.nav__list, .footer__list {
     display: flex;
     flex-direction: row;
     font-family: 'Inter', serif;
@@ -148,6 +148,80 @@ button {
     border-radius: 30px;
     margin-top: 20px;
     font-weight: 500;
+    height: 100%;
+}
+.header__link-back:hover {
+    animation: gradient 1s infinite linear;
+    background-size: 300%;
+}
+.footer {
+    padding: 40px 0 0 0;
+}
+.footer .container::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--white-primary);
+}
+.footer__item {
+    margin-left: 50px;
+    text-transform: capitalize;
+}
+.footer__section {
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.footer__section_s {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__list {
+    justify-content: flex-end;
+}
+.footer__list-icons {
+    display: flex;
+    flex-direction: row;
+}
+.footer__item-icon {
+    margin-left: 20px;
+}
+.footer__item-icon a {
+    position: relative;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--black-secondary);
+    background-clip: padding-box;
+    border: solid 2px transparent;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    transition: 0s;
+}
+.footer__item-icon a::before {
+    content: '';
+    position: absolute;
+    margin: -2px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: linear-gradient(var(--gradient));
+}
+.footer__icon {
+    font-size: 26px;
+}
+@keyframes gradient {
+    0% { background-position: 80% 0%; }
+    50% { background-position: 20% 100%; }
+    100% { background-position: 80% 0%; }
 }
 @media (max-width: 1200px) {
     .container {
@@ -160,23 +234,6 @@ button {
     }
     .container {
         max-width: 720px;
-    }
-    .header {
-        transform: translateY(20px);
-    }
-    .header__img {
-        height: 180px;
-        width: 180px;
-    }
-    .header__title {
-        font-size: 60px;
-        line-height: 1.1;
-    }
-    .header__text {
-        line-height: 1.5;
-    }
-    .header__link {
-        padding: 15px 20px;
     }
 }
 @media (max-width: 768px) {
