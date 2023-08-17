@@ -37,9 +37,10 @@ a {
     text-decoration: none;
     color: var(--white-primary);
     cursor: pointer;
+    transition: 0.2s;
 }
 a:hover {
-    opacity: .8;
+    opacity: .9;
 }
 button {
     cursor: pointer;
@@ -55,7 +56,9 @@ button {
     background-image: linear-gradient(90deg, var(--gradient));
 }
 .header-wrapper {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .nav {
     display: flex;
@@ -103,6 +106,9 @@ button {
     font-size: 80px;
     line-height: 1.2;
 }
+.header__title_nr {
+    font-size: 120px;
+}
 .header__item {
     margin-bottom: 20px;
 }
@@ -110,6 +116,7 @@ button {
     line-height: 2;
     width: 100%;
     max-width: 70%;
+    margin-bottom: 30px;
 }
 .header__buttons-wrapper {
     margin-left: auto;
@@ -133,6 +140,14 @@ button {
     background: none;
     border: 2px solid var(--white-primary);
     color: var(--white-primary);
+}
+.header__link-back {
+    padding: 15px 30px;
+    background: linear-gradient(90deg, var(--gradient));
+    text-transform: uppercase;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: 500;
 }
 @media (max-width: 1200px) {
     .container {
