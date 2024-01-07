@@ -3,30 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web service</title>
+    <title>Full-stack developer: Craft beautiful & functional websites</title>
+
+    <meta name="author" content="Roman Sheidvasser">
+    <meta name="title" content="Grow Your Business with a Winning Website: Development & Strategy">
+    <meta name="keywords" content="web, services, website, wordpress, development, online, shop, counsult">
+    <meta name="description"
+        content="Let's build your dream website! Contact me for a free consultation. I help businesses grow online with stunning & effective web pages.">
+    <meta property="og:title" content="Grow Your Business with a Winning Website: Development & Strategy">
+    <meta property="og:image" content="img/gallery/porten/devices_1.png">
+    <meta property="og:description" content="Attract more customers, boost leads, and increase sales. We develop, optimize, and strategize websites that work hard for you.">
+    <meta property="og:site_name" content="Semrush Blog">
+    <meta property="og:url" content="">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
     <div class="container">
         <nav class="nav">
+            <button class="hamburger-button" aria-controls="primary-navigation" aria-expanded="false">
+                <svg class="hamburger" viewBox="0 0 20 20" fill="transparent" width="40">
+                    <rect class="hamburger__rect top" x="3" y="5" width="14"></rect>
+                    <rect class="hamburger__rect middle" x="8" y="10" width="9"></rect>
+                    <rect class="hamburger__rect bottom" x="5" y="15" width="12"> </rect>
+                </svg>
+            </button>
             <ul class="nav__list">
-                <li class="nav__item"><a href="#">home</a></li>
-                <li class="nav__item"><a href="#">services</a></li>
-                <li class="nav__item"><a href="#">projects</a></li>
-                <li class="nav__item"><a href="#">about</a></li>
-                <li class="nav__item"><a href="#">blog</a></li>
+                <div class="nav__wrapper">
+                    <li class="nav__item"><a href="#">home</a></li>
+                    <li class="nav__item"><a href="#">services</a></li>
+                    <li class="nav__item"><a href="#">projects</a></li>
+                    <li class="nav__item"><a href="#">about</a></li>
+                    <li class="nav__item"><a href="#">blog</a></li>
+                </div>
             </ul>
             <a href="#" class="nav__button">let's talk</a>
         </nav>
-        
+
         <div class="header-wrapper">
             <header class="header">
-                <img src="img/photo-2.jpg" class="header__img header__item" alt="">
+                <img src="img/photo.webp" class="header__img header__item" alt="">
                 <h1 class="header__title header__item"><span class="gradientTitle">Hello, I'm Roman,</span> creative web
                     developer</h1>
                 <p class="header__text header__item">I work in Upwork and get my works there. I am specialized on coding
@@ -38,6 +61,84 @@
             </header>
         </div>
     </div>
+
+    <section class="divider">
+        <div class="divider__wrapper">
+            <div class="divider__line"></div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="projects__header">
+                <div class="projects__wrapper">
+                    <h2 class="projects__title title">Look at My <span class="gradientTitle">Projects</span></h2>
+                    <p class="projects__description">
+                        Here I share with you some of my works. Inside each card you may view
+                        screenshots of them and description where there is written way of developing and interesting
+                        features of the website.
+                    </p>
+                </div>
+                <div class="projects__card-wrapper">
+                    <div class="projects__card">
+                        <a href="pages/works/porten.html" class="projects__card-link">
+                            <div class="projects__card-img-wrapper">
+                                <img src="img/gallery/porten/devices_1.png" class="projects__card-img"
+                                    alt="web development">
+                            </div>
+                            <div class="projects__card-footer">
+                                <h2 class="projects__card-title">Blog landing page</h2>
+                                <p class="projects__card-description">WordPress</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects__card">
+                        <a href="pages/works/sparrow.html" class="projects__card-link">
+                            <div class="projects__card-img-wrapper">
+                                <img src="img/gallery/sparrow/devices_1.png" class="projects__card-img"
+                                    alt="web development">
+                            </div>
+                            <div class="projects__card-footer">
+                                <h2 class="projects__card-title">Blog landing page</h2>
+                                <p class="projects__card-description">WordPress</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects__load-more">
+                    <button class="load-more">load more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="possib">
+        <div class="container">
+            <h2 class="possib__title title">What I do</h2>
+            <div class="possib__wrapper">
+                <div class="possib__item">
+                    <img src="" alt="" class="possib__img">
+                    <h3 class="possib_title"></h3>
+                </div>
+                <div class="possib__item">
+                    <img src="" alt="" class="possib__img">
+                    <h3 class="possib_title"></h3>
+                </div>
+                <div class="possib__item">
+                    <img src="" alt="" class="possib__img">
+                    <h3 class="possib_title"></h3>
+                </div>
+                <div class="possib__item">
+                    <img src="" alt="" class="possib__img">
+                    <h3 class="possib_title"></h3>
+                </div>
+                <div class="possib__item">
+                    <img src="" alt="" class="possib__img">
+                    <h3 class="possib_title"></h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -52,9 +153,12 @@
             <section class="footer__section footer__section_s">
                 <p>&copy; Developed by Roman Sheidvasser</p>
                 <ul class="footer__list-icons">
-                    <li class="footer__item-icon"><a href="#"><i class="footer__icon fab fa-instagram"></i></a></li>
-                    <li class="footer__item-icon"><a href="#"><i class="footer__icon fab fa-telegram"></i></a></li>
-                    <li class="footer__item-icon"><a href="#"><i class="footer__icon fab fa-github"></i></a></li>
+                    <li class="footer__item-icon"><a href="https://www.instagram.com/sheid_vasser/"><i
+                                class="footer__icon fab fa-instagram"></i></a></li>
+                    <li class="footer__item-icon"><a href="https://t.me/Sheidvasser"><i
+                                class="footer__icon fab fa-telegram"></i></a></li>
+                    <li class="footer__item-icon"><a href="https://github.com/sheidvasser/"><i
+                                class="footer__icon fab fa-github"></i></a></li>
                 </ul>
             </section>
         </div>
