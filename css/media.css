@@ -1,3 +1,11 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --black-primary: #161513;
+        --black-secondary: #1C1C22;
+        --white-primary: #F0F2F5;
+        --white-secondary: #FFFFFF;
+    }
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;

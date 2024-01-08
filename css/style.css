@@ -1,9 +1,9 @@
 @import url(fonts.css);
 :root {
-    --black-primary: #161513;
-    --black-secondary: #1C1C22;
-    --white-primary: #F0F2F5;
-    --white-secondary: #FFFFFF;
+    --black-primary: #F0F2F5;
+    --black-secondary: #FFFFFF;
+    --white-primary: #161513;
+    --white-secondary: #1C1C22;
     --purple: #B16CEA;
     --red: #FF5E69;
     --orange: #FF8A56;
